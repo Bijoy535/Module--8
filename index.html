@@ -12,9 +12,10 @@
   <button onclick="Demo()">Click</button>
   <script>
     function Demo() {
-    document.open('text/html','replace');
-    document.write("<h2>amar name</h2>");
-    document.close();
+      let w = window.open();
+      w.document.open();
+      w.document.write("Hello New window")
+      w.document.close();
     }
 
   </script>
