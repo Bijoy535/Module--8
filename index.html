@@ -8,14 +8,19 @@
 </head>
 
 <body>
-  <p> </p>
+  <p>1 </p>
+  <p> 2</p>
+  <p> 3</p>
+  <p>4</p>
+  <p> 5</p>
+  <p> 6</p>
+
   <button onclick="Demo()">Click</button>
   <script>
     function Demo() {
-      let w = window.open();
-      w.document.open();
-      w.document.write("Hello New window")
-      w.document.close();
+      let MyItems = document.getElementsByTagName('p');
+      let ItemCount = MyItems.length;
+      alert(ItemCount);
     }
 
   </script>
