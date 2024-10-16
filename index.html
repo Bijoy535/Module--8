@@ -2,21 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 
 <body>
-    <p> p1 </p>
-    <p>p1</p>
-    <p>p3</p>
+  <button onclick="Demo">Click</button>
+  <script>
+    function Demo() {
+      var info = document.cookie;
+      document.getElementsByTagName('p')[0].innerHTML=info;
+    }
 
-    <script>
-       var MyElemnts=document.getElementsByTagName('p');
-       MyElemnts[2].innerHTML="p2 Manupulated"
-
-    </script>
+  </script>
 
 
 
