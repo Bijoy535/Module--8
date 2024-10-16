@@ -12,8 +12,9 @@
   <button onclick="Demo()">Click</button>
   <script>
     function Demo() {
-      var info = document.URL;
-      document.getElementsByTagName('p')[0].innerHTML = info;
+    document.open('text/html','replace');
+    document.write("<h2>amar name</h2>");
+    document.close();
     }
 
   </script>
