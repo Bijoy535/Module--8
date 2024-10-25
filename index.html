@@ -10,22 +10,21 @@
 </head>
 
 <body>
-<h1 id="MyID" class=""> Bangladesh </h1>
- 
-  <button onclick="AddStyle()">ADD Style</button>
-  <button onclick="RemoveStyle()">Remove Style </button>
+
+  <ul id="MyItems"> </ul> <br> <br> <br>
+  
+  <input id="MyInput"> <br> <br> <br>
+  <button onclick="AddItem()">Add</button>
+
 
   <script>
-    function AddStyle(){
-      let H1Tag = document.getElementById('MyID')
-      H1Tag.classList.add('text-primary')
+    function AddItem(){
+     var itemValue = document.getElementById('MyInput').value;
+     var listItem = document.createElement('li');
+     listItem.innerHTML=itemValue;
 
-
-    }
-    function RemoveStyle(){
-      let H1Tag = document.getElementById('MyID')
-      H1Tag.classList.remove('text-primary')
-
+    var MyItems= document.getElementById('MyItems');
+    MyItems.appendChild(listItem)
     }
   </script>
 
